@@ -256,6 +256,7 @@ h6 { font-size: 16px;}
 	border:1.5px solid #17a2b8;
 	background-color: var(--previewBg);
 	padding:15px;
+	padding-bottom: 0px;
 	position: relative;
 	box-shadow: 5px 5px 2px 0px var(--previewShadow);
 }

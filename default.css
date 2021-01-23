@@ -132,33 +132,15 @@ h6 { font-size: 16px;}
 	margin-left:5px;
 }
 
-.dots-wrapper{
+.logo-wrapper{
 	display: flex;
-	padding: 10px;
+	padding: 5px 10px;
 }
 
-#dot-1{
-	background-color:  #FC6058;
-}
-
-#dot-2{
-	background-color:  #FEC02F;
-}
-
-#dot-3{
-	background-color:  #2ACA3E;
-}
-
-.browser-dot{
-	background-color: black;
-	height: 15px;
-	width: 15px;
-	border-radius: 50%;
-	margin: 5px;
-
-	-webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
-	-moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
-	box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+.logo{
+	height: 40px;
+	width: 95px;
+	border-radius: 45%;
 }
 
 .left-column{
@@ -374,8 +356,30 @@ h6 { font-size: 16px;}
 }
 .top{
 	text-align: right;
-	line-height: 1;
+	position: fixed;
+	padding: 5px 2px;
+    bottom: 1%;
+	right: 1%;
+	background-image: linear-gradient(45deg, grey, rgb(135, 233, 43));
+	border-radius: 10%;
+	animation-name: rotate;
+	animation: rotate 4s infinite;
+	border: 1px solid var(--borderColor);
 }
+.top-text{
+	color: ivory;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+@keyframes rotate {
+	0% {
+	  transform: rotate(0);
+	}
+	100% {
+	  transform: rotate(360deg);
+	}
+  }
 
 @media screen and (max-width: 1200px){
 	.main-container{
